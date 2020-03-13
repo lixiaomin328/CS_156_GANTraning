@@ -35,7 +35,7 @@ def get_celeba(batch_size, dataset_directory, dataloader_workers):
     #           +- 000003.jpg
     #           +- ...
     train_transformation = transforms.Compose([
-        transforms.Resize((28, 28)),
+        transforms.Resize((64, 64)),
         transforms.Grayscale(num_output_channels=1),transforms.ToTensor(),
         transforms.Normalize([0.5], [0.5]),
     ])
